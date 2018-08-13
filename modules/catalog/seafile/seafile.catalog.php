@@ -330,7 +330,6 @@ class Catalog_Seafile extends Catalog
         }
 
         $vainfo = new vainfo($tempfilename, $gather_types, '', '', '', $sort_pattern, $rename_pattern, true);
-        $vainfo->forceSize($file->size);
         $vainfo->get_info();
 
         $key = vainfo::get_tag_type($vainfo->tags);
@@ -344,6 +343,8 @@ class Catalog_Seafile extends Catalog
         $results['catalog'] = $this->id;
 
         $results['file'] = $this->seafile->to_virtual_path($file);
+
+        unlink($tempfilename);
 
         return $results;
     }
@@ -480,7 +481,7 @@ class Catalog_Seafile extends Catalog
     public function format()
     {
         parent::format();
-        
+
         if ($this->seafile != null) {
             $this->f_info      = $this->seafile->get_format_string();
             $this->f_full_info = $this->seafile->get_format_string();

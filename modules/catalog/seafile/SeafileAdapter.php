@@ -259,7 +259,7 @@ class SeafileAdapter
             return $this->client['Client']->request('GET', $url, $opts);
         });
 
-        $tempfilename = sys_get_temp_dir() . DIRECTORY_SEPARATOR . $file->name;
+        $tempfilename = sys_get_temp_dir() . DIRECTORY_SEPARATOR . 'ampache-seafile-module' . DIRECTORY_SEPARATOR . $file->name;
 
         $tempfile = fopen($tempfilename, 'wb');
 
