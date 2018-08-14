@@ -71,6 +71,8 @@ class SeafileAdapter
         $this->api_key         = $api_key;
         $this->call_delay      = $call_delay;
         $this->directory_cache = array();
+
+        $this->tempdir = sys_get_temp_dir() . DIRECTORY_SEPARATOR . 'ampache-seafile-module';
     }
 
     // do we have all the info we need?
@@ -85,6 +87,10 @@ class SeafileAdapter
     // create API client object & find library
     public function prepare()
     {
+        if (!file_exists($this->tempdir)) {
+            mkdir($this->tempdir, 0777, true);
+        }
+
         if ($this->client !== null) {
             return true;
         }
@@ -259,7 +265,7 @@ class SeafileAdapter
             return $this->client['Client']->request('GET', $url, $opts);
         });
 
-        $tempfilename = sys_get_temp_dir() . DIRECTORY_SEPARATOR . 'ampache-seafile-module' . DIRECTORY_SEPARATOR . $file->name;
+        $tempfilename = $this->tempdir . DIRECTORY_SEPARATOR . $file->name;
 
         $tempfile = fopen($tempfilename, 'wb');
 
