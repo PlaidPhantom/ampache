@@ -4,13 +4,13 @@
 #
 # Translators:
 # Yuki Yamada <lz.yamada@gmail.com>, 2016
-# 西原 芳郎 <trasha@spage.jp>, 2018
+# Nishihara Yoshirou, 2018-2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Ampache\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/projects/p/ampache/\n"
-"POT-Creation-Date: 2018-07-31 01:37+0200\n"
-"PO-Revision-Date: 2018-04-18 04:42+0000\n"
+"POT-Creation-Date: 2019-06-13 23:31+0200\n"
+"PO-Revision-Date: 2019-05-26 16:07+0000\n"
 "Last-Translator: Afterster\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/ampache/ampache/"
 "language/ja_JP/)\n"
@@ -491,102 +491,124 @@ msgstr "完了しました"
 msgid "UPnP backend disabled. Broadcast skipped."
 msgstr "UPnPバックエンドは無効です。ブロードキャストをスキップします"
 
-#: ../../bin/catalog_update.inc:41
+#: ../../bin/catalog_update.inc:44
 msgid "Doing all catalog operations"
 msgstr "全てのカタログ操作を実施します"
 
-#: ../../bin/catalog_update.inc:48
+#: ../../bin/catalog_update.inc:52
 msgid "Temporary deactivate PHP memory limit"
 msgstr "PHPのメモリ上限を一時的に無効化します"
 
-#: ../../bin/catalog_update.inc:52
+#: ../../bin/catalog_update.inc:56
+msgid "Setting catalog name"
+msgstr ""
+
+#: ../../bin/catalog_update.inc:60
+msgid "Setting catalog type"
+msgstr ""
+
+#: ../../bin/catalog_update.inc:64
 msgid "Cleaning catalog/s"
 msgstr "カタログの掃除中です"
 
-#: ../../bin/catalog_update.inc:56
+#: ../../bin/catalog_update.inc:68
 msgid "Verifying catalog/s"
 msgstr "カタログを確認中です"
 
-#: ../../bin/catalog_update.inc:60
+#: ../../bin/catalog_update.inc:72
 msgid "Adding new media to catalog/s"
 msgstr "新しいメディアをカタログに追加中です"
 
-#: ../../bin/catalog_update.inc:64
+#: ../../bin/catalog_update.inc:76
 msgid "Gathering new media art"
 msgstr "新しいメディアアートを収集中です"
 
-#: ../../bin/catalog_update.inc:68
+#: ../../bin/catalog_update.inc:80
 msgid "Importing playlist/s"
 msgstr "プレイリストをインポート中です"
 
-#: ../../bin/catalog_update.inc:72
+#: ../../bin/catalog_update.inc:84
 msgid "Database table optimization"
 msgstr "データベースのテーブルを最適化します"
 
-#: ../../bin/catalog_update.inc:95
+#: ../../bin/catalog_update.inc:101
 msgid "Starting catalog operations..."
 msgstr "カタログの操作を開始しています..."
 
-#: ../../bin/catalog_update.inc:101
+#: ../../bin/catalog_update.inc:107
 msgid "Deactivated PHP memory limit"
 msgstr "PHPのメモリ上限を無効化しました"
 
-#: ../../bin/catalog_update.inc:108
+#: ../../bin/catalog_update.inc:114
 msgid "Gathering art"
 msgstr "アートの収集"
 
-#: ../../bin/catalog_update.inc:114
+#: ../../bin/catalog_update.inc:120
 msgid "Parsing playlists"
 msgstr "プレイリストの解析"
 
-#: ../../bin/catalog_update.inc:131
+#: ../../bin/catalog_update.inc:141
 #, php-format
 msgid "Reading catalog: %s"
 msgstr "カタログを読み込み: %s"
 
-#: ../../bin/catalog_update.inc:137
+#: ../../bin/catalog_update.inc:147
 msgid "Start cleaning orphaned media entries"
 msgstr "孤立したメディアエントリーの掃除を開始"
 
-#: ../../bin/catalog_update.inc:144
+#: ../../bin/catalog_update.inc:154
 msgid "Start verifying media related to catalog entries"
 msgstr "カタログエントリーに関連したメディアの確認を開始"
 
-#: ../../bin/catalog_update.inc:151
+#: ../../bin/catalog_update.inc:161
 msgid "Start adding new media"
 msgstr "新しいメディアの追加を開始"
 
-#: ../../bin/catalog_update.inc:158
+#: ../../bin/catalog_update.inc:168
 msgid "Start searching new media art"
 msgstr "新しいメディアアートの検索を開始"
 
-#: ../../bin/catalog_update.inc:166
+#: ../../bin/catalog_update.inc:176
 msgid "Optimizing database tables"
 msgstr "データベースのテーブルを最適化"
 
-#: ../../bin/catalog_update.inc:191
+#: ../../bin/catalog_update.inc:201
 msgid "- Catalog Update Help -"
 msgstr "- カタログ アップデート ヘルプ -"
 
-#: ../../bin/catalog_update.inc:193
-msgid "Usage: catalog_update.inc [CATALOG NAME] [-m|-c|-v|-a|-g|-i|-o]"
-msgstr "使用方法: catalog_update.inc [カタログ名] [-m|-c|-v|-a|-g|-i|-o]"
+#: ../../bin/catalog_update.inc:203
+msgid ""
+"Usage: catalog_update.inc [-n CATALOG NAME] [-t CATALOG TYPE] [-h|-m|-c|-v|-"
+"a|-g|-i|-o]"
+msgstr ""
 
-#: ../../bin/catalog_update.inc:197
+#: ../../bin/catalog_update.inc:207
 msgid ""
 "Default behavior is to do all except temporarily deactivate the php memory "
 "limit"
 msgstr "デフォルトの動作ではPHPのメモリ上限を無効化する以外の全てを行います"
 
-#: ../../bin/catalog_update.inc:201
+#: ../../bin/catalog_update.inc:211
+msgid "This help message"
+msgstr ""
+
+#: ../../bin/catalog_update.inc:213
+msgid "Name of Catalog (Optional)"
+msgstr ""
+
+#: ../../bin/catalog_update.inc:215
+msgid "Type of Catalog (Optional)"
+msgstr ""
+
+#: ../../bin/catalog_update.inc:217
 msgid "Temporarily deactivates PHP memory limit."
 msgstr "PHPのメモリ上限を無効化します"
 
-#: ../../bin/catalog_update.inc:203
+#: ../../bin/catalog_update.inc:219
 msgid "Cleans catalogs from orphaned entries."
 msgstr "孤立したエントリーをカタログから掃除します"
 
-#: ../../bin/catalog_update.inc:205
+#: ../../bin/catalog_update.inc:221
 msgid ""
 "Verifies catalog entries and updates them if related files have new "
 "information."
@@ -594,23 +616,23 @@ msgstr ""
 "カタログエントリーを確認し、関連するファイルが新しい情報を持っている場合に更"
 "新します"
 
-#: ../../bin/catalog_update.inc:207
+#: ../../bin/catalog_update.inc:223
 msgid "Adds new media to catalogs."
 msgstr "新しいメディアをカタログに追加します"
 
-#: ../../bin/catalog_update.inc:209
+#: ../../bin/catalog_update.inc:225
 msgid "Gathers media Art."
 msgstr "メディアアートを収集します"
 
-#: ../../bin/catalog_update.inc:211
+#: ../../bin/catalog_update.inc:227
 msgid "Imports playlists."
 msgstr "プレイリストをインポートします"
 
-#: ../../bin/catalog_update.inc:213
+#: ../../bin/catalog_update.inc:229
 msgid "Optimizes Database Tables."
 msgstr "データベースのテーブルを最適化します"
 
-#: ../../bin/catalog_update.inc:216
+#: ../../bin/catalog_update.inc:232
 msgid ""
 "Use this option at your own risk! Your system could crash or become "
 "unresponsive due to huge memory consumption!"
@@ -618,7 +640,7 @@ msgstr ""
 "このオプションはあなたの責任で使用してください。大量にメモリを使用してしま"
 "い、あなたのシステムがクラッシュしたり、応答しなくなる可能性があります！"
 
-#: ../../bin/catalog_update.inc:217
+#: ../../bin/catalog_update.inc:233
 msgid ""
 "Depending on your systems performance, this option could need a long time to "
 "finish and extremely slow down other database processes if you have big "
@@ -627,7 +649,7 @@ msgstr ""
 "システム性能によっては、大きなカタログがある場合にこのオプションを使用する"
 "と、他のデータベースプロセスの完了に時間がかかる可能性があります！"
 
-#: ../../bin/catalog_update.inc:218
+#: ../../bin/catalog_update.inc:234
 msgid ""
 "The switches [-m|-i|-o] can only be used, if one of the other switches [-c|-"
 "v|-a|-g] is used."
@@ -703,8 +725,8 @@ msgstr "エラー: この機能にはIconvが必須です、終了します"
 
 #: ../../bin/fix_filenames.inc:51
 #, php-format
-msgid "%s For the Love of Music"
-msgstr "%s 音楽の愛の為に"
+msgid "%s"
+msgstr ""
 
 #: ../../bin/fix_filenames.inc:52
 msgid "Testing Basic Translation, the two strings below should look the same"
@@ -1122,13 +1144,13 @@ msgstr "ウェブインタフェース"
 msgid "Stream Access"
 msgstr "ストリームアクセス"
 
-#: ../../lib/class/album.class.php:408 ../../lib/class/artist.class.php:681
+#: ../../lib/class/album.class.php:404 ../../lib/class/artist.class.php:681
 #: ../../templates/show_album_group_disks.inc.php:51
 #: ../../templates/show_lyrics.inc.php:32
 msgid "Unknown (Orphaned)"
 msgstr "不明(孤立)"
 
-#: ../../lib/class/album.class.php:645
+#: ../../lib/class/album.class.php:641
 #: ../../lib/class/subsonic_xml_data.class.php:594
 #: ../../server/search.ajax.php:87
 #: ../../templates/show_album_group_disks.inc.php:109
@@ -1138,7 +1160,7 @@ msgstr "不明(孤立)"
 msgid "Disk"
 msgstr "ディスク"
 
-#: ../../lib/class/album.class.php:657 ../../lib/class/browse.class.php:226
+#: ../../lib/class/album.class.php:653 ../../lib/class/browse.class.php:226
 #: ../../lib/class/upnp_api.class.php:331 ../../lib/ui.lib.php:180
 #: ../../server/search.ajax.php:57 ../../templates/header.inc.php:414
 #: ../../templates/show_label.inc.php:103
@@ -1155,23 +1177,23 @@ msgstr "ディスク"
 msgid "Artists"
 msgstr "アーティスト"
 
-#: ../../lib/class/album.class.php:657 ../../lib/class/album.class.php:658
+#: ../../lib/class/album.class.php:653 ../../lib/class/album.class.php:654
 #: ../../templates/show_edit_album_row.inc.php:38
 #: ../../templates/show_install_config.inc.php:64
 msgid "Various"
 msgstr "いくつかの"
 
-#: ../../lib/class/album.class.php:677
+#: ../../lib/class/album.class.php:673
 msgid "Album MusicBrainzID"
 msgstr "アルバムのMusicBrainzID"
 
-#: ../../lib/class/album.class.php:680
+#: ../../lib/class/album.class.php:676
 msgid "Release Group MusicBrainzID"
 msgstr "リリースグループのMusicBrainzID"
 
-#: ../../lib/class/album.class.php:683 ../../lib/class/artist.class.php:501
+#: ../../lib/class/album.class.php:679 ../../lib/class/artist.class.php:501
 #: ../../lib/class/clip.class.php:121 ../../lib/class/search.class.php:239
-#: ../../lib/class/search.class.php:492 ../../lib/class/song.class.php:1489
+#: ../../lib/class/search.class.php:492 ../../lib/class/song.class.php:1490
 #: ../../templates/browse_filters.inc.php:79
 #: ../../templates/show_add_upload.inc.php:177
 #: ../../templates/show_albums.inc.php:40
@@ -1207,7 +1229,7 @@ msgstr "リリースグループのMusicBrainzID"
 msgid "Artist"
 msgstr "アーティスト"
 
-#: ../../lib/class/album.class.php:686 ../../lib/class/search.class.php:232
+#: ../../lib/class/album.class.php:682 ../../lib/class/search.class.php:232
 #: ../../templates/show_add_upload.inc.php:188
 #: ../../templates/show_albums.inc.php:38
 #: ../../templates/show_albums.inc.php:112
@@ -1244,7 +1266,7 @@ msgstr "現在の演奏曲"
 #: ../../templates/show_recently_played.inc.php:24
 #: ../../templates/show_user.inc.php:114
 msgid "Recently Played"
-msgstr "最近再生したもの"
+msgstr "最近再生した曲"
 
 #: ../../lib/class/ampache_rss.class.php:94 ../../templates/header.inc.php:43
 msgid "Newest Albums"
@@ -1310,34 +1332,34 @@ msgid "Login Failed: timestamp out of range"
 msgstr "ログインに失敗しました: タイムスタンプが範囲外です"
 
 #: ../../lib/class/api.class.php:182 ../../lib/class/api.class.php:195
-#: ../../lib/class/api.class.php:282
+#: ../../lib/class/api.class.php:290
 msgid "Error Invalid Handshake - "
 msgstr "不正なハンドシェイクエラー - "
 
 #: ../../lib/class/api.class.php:194 ../../lib/class/api.class.php:195
-#: ../../lib/class/api.class.php:282
+#: ../../lib/class/api.class.php:290
 msgid "Invalid Username/Password"
 msgstr "不正なユーザ名/パスワードです"
 
-#: ../../lib/class/api.class.php:661 ../../lib/class/api.class.php:679
-#: ../../lib/class/api.class.php:697
+#: ../../lib/class/api.class.php:669 ../../lib/class/api.class.php:687
+#: ../../lib/class/api.class.php:705
 msgid "Access denied to this playlist."
 msgstr "このプレイリストへのアクセスが拒否されました"
 
-#: ../../lib/class/api.class.php:815 ../../lib/class/api.class.php:876
+#: ../../lib/class/api.class.php:823 ../../lib/class/api.class.php:884
 #: ../../server/xml.server.php:109
 msgid "Invalid Request"
 msgstr "不正なリクエスト"
 
-#: ../../lib/class/api.class.php:836 ../../lib/class/api.class.php:854
+#: ../../lib/class/api.class.php:844 ../../lib/class/api.class.php:862
 msgid "Media Object Invalid or Not Specified"
 msgstr "メディアオブジェクトは不正か指定されていません"
 
-#: ../../lib/class/api.class.php:1069
+#: ../../lib/class/api.class.php:1077
 msgid "Wrong library item type."
 msgstr "不正なライブラリアイテムタイプです"
 
-#: ../../lib/class/api.class.php:1073
+#: ../../lib/class/api.class.php:1081
 msgid "Library item not found."
 msgstr "ライブラリアイテムが見つかりませんでした"
 
@@ -1397,38 +1419,38 @@ msgstr "アートのリセット"
 msgid "Artist MusicBrainzID"
 msgstr "アーティストのMusicBrainzID"
 
-#: ../../lib/class/autoupdate.class.php:233
+#: ../../lib/class/autoupdate.class.php:234
 msgid "Update available"
 msgstr "アップデート可能です"
 
-#: ../../lib/class/autoupdate.class.php:236
+#: ../../lib/class/autoupdate.class.php:237
 msgid "See"
 msgstr "確認する"
 
-#: ../../lib/class/autoupdate.class.php:236
+#: ../../lib/class/autoupdate.class.php:237
 msgid "changes"
 msgstr "変更点"
 
-#: ../../lib/class/autoupdate.class.php:238
-#: ../../lib/class/autoupdate.class.php:241
+#: ../../lib/class/autoupdate.class.php:239
+#: ../../lib/class/autoupdate.class.php:242
 msgid "or"
 msgstr "または"
 
-#: ../../lib/class/autoupdate.class.php:239
-#: ../../lib/class/autoupdate.class.php:242
+#: ../../lib/class/autoupdate.class.php:240
+#: ../../lib/class/autoupdate.class.php:243
 msgid "download"
 msgstr "ダウンロード"
 
-#: ../../lib/class/autoupdate.class.php:256
+#: ../../lib/class/autoupdate.class.php:257
 msgid "Updating Ampache sources with `"
 msgstr "Ampache ソースの更新 `"
 
-#: ../../lib/class/autoupdate.class.php:260
-#: ../../lib/class/autoupdate.class.php:275
+#: ../../lib/class/autoupdate.class.php:261
+#: ../../lib/class/autoupdate.class.php:276
 msgid "Done"
 msgstr "完了"
 
-#: ../../lib/class/autoupdate.class.php:271
+#: ../../lib/class/autoupdate.class.php:272
 msgid "Updating dependencies with `"
 msgstr "依存関係の更新 `"
 
@@ -1883,7 +1905,7 @@ msgstr "フィードを読み込みできません"
 
 #: ../../lib/class/podcast_episode.class.php:157
 #: ../../lib/class/search.class.php:225 ../../lib/class/search.class.php:485
-#: ../../lib/class/song.class.php:1492 ../../lib/class/video.class.php:303
+#: ../../lib/class/song.class.php:1493 ../../lib/class/video.class.php:303
 #: ../../templates/show_democratic_playlist.inc.php:60
 #: ../../templates/show_democratic_playlist.inc.php:113
 #: ../../templates/show_disabled_songs.inc.php:29
@@ -2402,12 +2424,12 @@ msgstr "シャウトの投稿"
 msgid "by"
 msgstr "by"
 
-#: ../../lib/class/song.class.php:1460
+#: ../../lib/class/song.class.php:1461
 #: ../../templates/show_html5_player.inc.php:154
 msgid "Show Lyrics"
 msgstr "歌詞の表示"
 
-#: ../../lib/class/song.class.php:1486
+#: ../../lib/class/song.class.php:1487
 msgid "Track MusicBrainzID"
 msgstr "トラックのMusicBrainzID"
 
@@ -3281,7 +3303,7 @@ msgstr "ERROR"
 msgid "WARNING"
 msgstr "WARNING"
 
-#: ../../lib/general.lib.php:213
+#: ../../lib/general.lib.php:210
 #, php-format
 msgid "Unknown %s"
 msgstr "不明 %s"
@@ -3627,33 +3649,25 @@ msgstr "オン"
 msgid "Off"
 msgstr "オフ"
 
-#: ../../lostpassword.php:39
-msgid "Password has been sent"
-msgstr "パスワードを送信しました"
-
-#: ../../lostpassword.php:41
-msgid "Password has not been sent"
-msgstr "パスワードは送信されませんでした"
-
-#: ../../lostpassword.php:60
+#: ../../lostpassword.php:71
 msgid "Lost Password"
 msgstr "パスワードをなくしました"
 
-#: ../../lostpassword.php:64
+#: ../../lostpassword.php:75
 #, php-format
 msgid "A user from %s has requested a password reset for '%s'."
 msgstr "%sからユーザは「%s：のパスワードリセットのリクエストをしました。"
 
-#: ../../lostpassword.php:66
+#: ../../lostpassword.php:77
 #, php-format
 msgid "The password has been set to: %s"
 msgstr "パスワードを%sへ設定しました"
 
-#: ../../modules/Beets/Catalog.php:125
+#: ../../modules/Beets/Catalog.php:126
 msgid "Running Beets Update"
 msgstr "Beetsの更新を実行中"
 
-#: ../../modules/Beets/Catalog.php:200
+#: ../../modules/Beets/Catalog.php:205
 #: ../../modules/catalog/remote/remote.catalog.php:273
 #: ../../modules/catalog/soundcloud/soundcloud.catalog.php:300
 #: ../../modules/catalog/subsonic/subsonic.catalog.php:254
@@ -3787,7 +3801,7 @@ msgstr "曲は最新です: \"%s\""
 msgid "Removing song \"%s\""
 msgstr "曲を削除します \"%s\""
 
-#: ../../modules/catalog/dropbox/dropbox.catalog.php:529
+#: ../../modules/catalog/dropbox/dropbox.catalog.php:521
 msgid "API Error: cannot connect to Dropbox."
 msgstr "API エラー: Dropboxに接続できません"
 
@@ -5041,8 +5055,8 @@ msgid ""
 "In the form below enter either a local path (i.e. /data/music) or the URL to "
 "a remote Ampache installation (i.e http://theotherampache.com)"
 msgstr ""
-"以下のフォームではローカルパス(例 /data/music)かURLのどちらかをリモートの"
-"Ampatcheに入れます(例 http://theoherampache.com)"
+"以下のフォームではローカルパス(例 /data/music)か別のAmpatcheのURL(例 http://"
+"theoherampache.com)のどちらかを入力してください"
 
 #: ../../templates/show_add_catalog.inc.php:34
 msgid "Catalog Name"
@@ -5105,7 +5119,7 @@ msgstr "フォルダパターン"
 #: ../../templates/show_add_catalog.inc.php:56
 #: ../../templates/show_edit_catalog.inc.php:53
 msgid "(no leading or ending '/')"
-msgstr "(先頭がない又は「/」で終わっている)"
+msgstr "(先頭または末尾を '/' にしない)"
 
 #: ../../templates/show_add_catalog.inc.php:60
 #: ../../templates/show_catalog_row.inc.php:47
@@ -5682,12 +5696,12 @@ msgstr "読み込み中..."
 #: ../../templates/show_artist.inc.php:101
 #: ../../templates/show_artist.inc.php:103
 msgid "Show all"
-msgstr "すべて見る"
+msgstr "すべて表示"
 
 #: ../../templates/show_artist.inc.php:109
 #: ../../templates/show_artist.inc.php:111
 msgid "Show albums"
-msgstr "アルバムを見る"
+msgstr "アルバムを表示"
 
 #: ../../templates/show_artist.inc.php:118
 #: ../../templates/show_artist.inc.php:119
@@ -6596,7 +6610,7 @@ msgstr "プレイリストをインポート"
 #: ../../templates/show_index.inc.php:50
 #: ../../templates/show_random_albums.inc.php:26
 msgid "Albums of the Moment"
-msgstr "現在のアルバム"
+msgstr "ランダムなアルバム"
 
 #: ../../templates/show_index.inc.php:59
 #: ../../templates/show_random_videos.inc.php:26
@@ -7159,7 +7173,7 @@ msgstr "歌詞が見つかりません"
 
 #: ../../templates/show_lyrics.inc.php:64
 msgid "Show more"
-msgstr "さらに見る"
+msgstr "さらに表示"
 
 #: ../../templates/show_mail_users.inc.php:24
 msgid "Send E-mail to Users"
@@ -7196,7 +7210,7 @@ msgstr "全アートを収集"
 
 #: ../../templates/show_manage_catalogs.inc.php:30
 msgid "Show disabled songs"
-msgstr "無効になっている曲を見る"
+msgstr "無効になっている曲を表示"
 
 #: ../../templates/show_manage_catalogs.inc.php:33
 msgid "Add to All"
@@ -8422,7 +8436,7 @@ msgstr "曲タイトル"
 
 #: ../../templates/sidebar_home.inc.php:74
 msgid "Music Clips"
-msgstr "ムージッククリップ"
+msgstr "ミュージッククリップ"
 
 #: ../../templates/sidebar_home.inc.php:98
 msgid "Currently Playing"
@@ -8540,7 +8554,7 @@ msgstr "TV番組を削除できません"
 
 #: ../../tvshows.php:81
 msgid "Show TV Shows starting with"
-msgstr "次で始まるTV番組を見る"
+msgstr "次で始まるTV番組を表示"
 
 #: ../../update.php:81
 #, php-format
@@ -8582,7 +8596,7 @@ msgstr "この動画を削除できません"
 # Please do not delete or modify the content by yourself. It will be
 # automatically (re)generated
 # if you run './gather-messages.sh [-gu|--getutds].
-# Last Update: 04.06.2018 15:57:55 CEST
+# Last Update: 26.05.2019 15:10:29 CEST
 #
 #: Database preference table id 1
 msgid "Allow Downloads"
@@ -8612,11 +8626,7 @@ msgstr "ポートに関わらずHTTP再生を強制"
 msgid "Type of Playback"
 msgstr "プレイバックのタイプ"
 
-# is already in the source code
-# but to avoid confusion, it's added and commented
-# msgid "Language"
-# msgstr ""
-#: Database preference table id 31 32
+#: Database preference table id 32
 msgid "Playlist Type"
 msgstr "プレイリストタイプ"
 
@@ -8660,15 +8670,7 @@ msgstr "レート制限"
 msgid "Playlist Method"
 msgstr "プレイリストの方法"
 
-# is already in the source code
-# but to avoid confusion, it's added and commented
-# msgid "Transcoding"
-# msgstr ""
-# is already in the source code
-# but to avoid confusion, it's added and commented
-# msgid "Show Lyrics"
-# msgstr ""
-#: Database preference table id 55 69 72
+#: Database preference table id 72
 msgid "Shoutcast Active Instance"
 msgstr "Shoutcast Active Instance"
 
@@ -8706,11 +8708,11 @@ msgstr "アルバムのデフォルトソート"
 
 #: Database preference table id 84
 msgid "Show # played"
-msgstr "見る # 再生済み"
+msgstr "再生回数を表示"
 
 #: Database preference table id 85
 msgid "Show current song in Web player page title"
-msgstr "現在の曲をウェブプレーヤーページのタイトルで見る"
+msgstr "現在の曲をウェブプレーヤーページのタイトルで表示"
 
 #: Database preference table id 86
 msgid "Use SubSonic backend"
@@ -8878,19 +8880,19 @@ msgstr "ダイレクト再生の最大メディア数制限"
 
 #: Database preference table id 125
 msgid "Show Albums of the moment at home page"
-msgstr "現在のアルバムをホームページで見る"
+msgstr "ランダムなアルバムをホームページで表示する"
 
 #: Database preference table id 126
 msgid "Show Videos of the moment at home page"
-msgstr "現在の動画をホームページで見る"
+msgstr "現在の動画をホームページで表示"
 
 #: Database preference table id 127
 msgid "Show Recently Played at home page"
-msgstr "最近の再生をホームページで見る"
+msgstr "最近の再生した曲をホームページで表示"
 
 #: Database preference table id 128
 msgid "Show Now Playing at home page"
-msgstr "現在の再生をホームページで見る"
+msgstr "現在の再生中の曲をホームページで表示"
 
 #: Database preference table id 129
 msgid "Custom logo url"
@@ -8979,7 +8981,7 @@ msgstr "インポート時にライブラリアイテムをチェックして重
 
 #: Database preference table id 153
 msgid "Show filter box on browse"
-msgstr "フィルタボックスをブラウザで見る"
+msgstr "フィルタボックスをブラウザで表示"
 
 #: Database preference table id 154
 msgid "Light sidebar by default"
@@ -9019,3 +9021,27 @@ msgstr "AmazonのSecret Access Key"
 #: Database preference table id 168
 msgid "Amazon associate tag"
 msgstr "Amazonのassociate tag"
+
+#: Database preference subcategory table id 150
+msgid "library"
+msgstr ""
+
+#: Database preference subcategory table id 151
+msgid "upload"
+msgstr ""
+
+#: Database preference subcategory table id 152
+msgid "catalog"
+msgstr ""
+
+#: Database preference subcategory table id 154
+msgid "theme"
+msgstr ""
+
+#: Database preference subcategory table id 155
+msgid "custom"
+msgstr ""
+
+#: Database preference subcategory table id 164
+msgid "amazon"
+msgstr ""

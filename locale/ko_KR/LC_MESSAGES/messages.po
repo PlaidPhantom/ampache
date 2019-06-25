@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# Alexander Son <soneus72@snu.ac.kr>, 2019
 # Sunghun Park <shpark.x1@gmail.com>, 2017
 # Sunghun Park <shpark.x1@gmail.com>, 2017
 # 유영재 <yjsoft@yjsoft.pe.kr>, 2018
@@ -10,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ampache\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/projects/p/ampache/\n"
-"POT-Creation-Date: 2018-07-31 01:37+0200\n"
-"PO-Revision-Date: 2018-05-05 06:22+0000\n"
-"Last-Translator: 유영재 <yjsoft@yjsoft.pe.kr>\n"
+"POT-Creation-Date: 2019-06-13 23:31+0200\n"
+"PO-Revision-Date: 2019-05-26 16:07+0000\n"
+"Last-Translator: Afterster\n"
 "Language-Team: Korean (Korea) (http://www.transifex.com/ampache/ampache/"
 "language/ko_KR/)\n"
 "Language: ko_KR\n"
@@ -252,7 +253,7 @@ msgstr ""
 
 #: ../../admin/system.php:51
 msgid "Database Charset Updated"
-msgstr ""
+msgstr "데이타베이스 문자 설정이 수정되었습니다"
 
 #: ../../admin/system.php:51
 msgid ""
@@ -280,7 +281,7 @@ msgstr "오류 사용자 이름이 이미 존재합니다"
 #: ../../admin/users.php:71 ../../admin/users.php:137
 #: ../../lib/class/user.class.php:601
 msgid "Error Passwords don't match"
-msgstr ""
+msgstr "오류 암호가 일치하지 않습니다"
 
 #: ../../admin/users.php:76 ../../admin/users.php:151 ../../register.php:95
 msgid "Invalid email address"
@@ -292,7 +293,7 @@ msgstr ""
 
 #: ../../admin/users.php:114
 msgid "updated"
-msgstr ""
+msgstr "수정됨"
 
 #: ../../admin/users.php:163 ../../register.php:150
 msgid "Error: Insert Failed"
@@ -404,7 +405,7 @@ msgstr "새 API 키 생성"
 
 #: ../../admin/users.php:252
 msgid "Confirm API Key Generation"
-msgstr ""
+msgstr "API 키 생성 확인"
 
 #: ../../admin/users.php:268
 msgid "API Key Generated"
@@ -488,137 +489,159 @@ msgstr "완료"
 msgid "UPnP backend disabled. Broadcast skipped."
 msgstr "UPnP 백앤드가 비활성화되어 있습니다. 방송을 스킵합니다."
 
-#: ../../bin/catalog_update.inc:41
+#: ../../bin/catalog_update.inc:44
 msgid "Doing all catalog operations"
 msgstr ""
 
-#: ../../bin/catalog_update.inc:48
+#: ../../bin/catalog_update.inc:52
 msgid "Temporary deactivate PHP memory limit"
 msgstr "일시적으로 PHP 메모리 제한 해제"
 
-#: ../../bin/catalog_update.inc:52
-msgid "Cleaning catalog/s"
-msgstr ""
-
 #: ../../bin/catalog_update.inc:56
-msgid "Verifying catalog/s"
+msgid "Setting catalog name"
 msgstr ""
 
 #: ../../bin/catalog_update.inc:60
-msgid "Adding new media to catalog/s"
+msgid "Setting catalog type"
 msgstr ""
 
 #: ../../bin/catalog_update.inc:64
-msgid "Gathering new media art"
+msgid "Cleaning catalog/s"
 msgstr ""
 
 #: ../../bin/catalog_update.inc:68
-msgid "Importing playlist/s"
+msgid "Verifying catalog/s"
 msgstr ""
 
 #: ../../bin/catalog_update.inc:72
+msgid "Adding new media to catalog/s"
+msgstr ""
+
+#: ../../bin/catalog_update.inc:76
+msgid "Gathering new media art"
+msgstr ""
+
+#: ../../bin/catalog_update.inc:80
+msgid "Importing playlist/s"
+msgstr "연주 목록 가져오는 중"
+
+#: ../../bin/catalog_update.inc:84
 msgid "Database table optimization"
 msgstr ""
 
-#: ../../bin/catalog_update.inc:95
+#: ../../bin/catalog_update.inc:101
 msgid "Starting catalog operations..."
 msgstr ""
 
-#: ../../bin/catalog_update.inc:101
+#: ../../bin/catalog_update.inc:107
 msgid "Deactivated PHP memory limit"
 msgstr "PHP 메모리 제한을 해제했습니다"
 
-#: ../../bin/catalog_update.inc:108
+#: ../../bin/catalog_update.inc:114
 msgid "Gathering art"
 msgstr ""
 
-#: ../../bin/catalog_update.inc:114
+#: ../../bin/catalog_update.inc:120
 msgid "Parsing playlists"
 msgstr ""
 
-#: ../../bin/catalog_update.inc:131
+#: ../../bin/catalog_update.inc:141
 #, php-format
 msgid "Reading catalog: %s"
 msgstr "카탈로그 읽는 중: %s"
 
-#: ../../bin/catalog_update.inc:137
+#: ../../bin/catalog_update.inc:147
 msgid "Start cleaning orphaned media entries"
 msgstr ""
 
-#: ../../bin/catalog_update.inc:144
+#: ../../bin/catalog_update.inc:154
 msgid "Start verifying media related to catalog entries"
 msgstr ""
 
-#: ../../bin/catalog_update.inc:151
+#: ../../bin/catalog_update.inc:161
 msgid "Start adding new media"
 msgstr ""
 
-#: ../../bin/catalog_update.inc:158
+#: ../../bin/catalog_update.inc:168
 msgid "Start searching new media art"
 msgstr ""
 
-#: ../../bin/catalog_update.inc:166
+#: ../../bin/catalog_update.inc:176
 msgid "Optimizing database tables"
 msgstr ""
 
-#: ../../bin/catalog_update.inc:191
+#: ../../bin/catalog_update.inc:201
 msgid "- Catalog Update Help -"
+msgstr "- 카탈로그 수정 도움말 - "
+
+#: ../../bin/catalog_update.inc:203
+msgid ""
+"Usage: catalog_update.inc [-n CATALOG NAME] [-t CATALOG TYPE] [-h|-m|-c|-v|-"
+"a|-g|-i|-o]"
 msgstr ""
 
-#: ../../bin/catalog_update.inc:193
-msgid "Usage: catalog_update.inc [CATALOG NAME] [-m|-c|-v|-a|-g|-i|-o]"
-msgstr ""
-
-#: ../../bin/catalog_update.inc:197
+#: ../../bin/catalog_update.inc:207
 msgid ""
 "Default behavior is to do all except temporarily deactivate the php memory "
 "limit"
 msgstr ""
 
-#: ../../bin/catalog_update.inc:201
-msgid "Temporarily deactivates PHP memory limit."
+#: ../../bin/catalog_update.inc:211
+msgid "This help message"
 msgstr ""
 
-#: ../../bin/catalog_update.inc:203
+#: ../../bin/catalog_update.inc:213
+msgid "Name of Catalog (Optional)"
+msgstr ""
+
+#: ../../bin/catalog_update.inc:215
+msgid "Type of Catalog (Optional)"
+msgstr ""
+
+#: ../../bin/catalog_update.inc:217
+msgid "Temporarily deactivates PHP memory limit."
+msgstr "일시적으로 PHP 메모리 제한을 사용할 수 없습니다"
+
+#: ../../bin/catalog_update.inc:219
 msgid "Cleans catalogs from orphaned entries."
 msgstr ""
 
-#: ../../bin/catalog_update.inc:205
+#: ../../bin/catalog_update.inc:221
 msgid ""
 "Verifies catalog entries and updates them if related files have new "
 "information."
 msgstr ""
 
-#: ../../bin/catalog_update.inc:207
+#: ../../bin/catalog_update.inc:223
 msgid "Adds new media to catalogs."
 msgstr ""
 
-#: ../../bin/catalog_update.inc:209
+#: ../../bin/catalog_update.inc:225
 msgid "Gathers media Art."
 msgstr ""
 
-#: ../../bin/catalog_update.inc:211
+#: ../../bin/catalog_update.inc:227
 msgid "Imports playlists."
-msgstr ""
+msgstr "연주 목록 가져오기."
 
-#: ../../bin/catalog_update.inc:213
+#: ../../bin/catalog_update.inc:229
 msgid "Optimizes Database Tables."
 msgstr ""
 
-#: ../../bin/catalog_update.inc:216
+#: ../../bin/catalog_update.inc:232
 msgid ""
 "Use this option at your own risk! Your system could crash or become "
 "unresponsive due to huge memory consumption!"
 msgstr ""
 
-#: ../../bin/catalog_update.inc:217
+#: ../../bin/catalog_update.inc:233
 msgid ""
 "Depending on your systems performance, this option could need a long time to "
 "finish and extremely slow down other database processes if you have big "
 "catalogs!"
 msgstr ""
 
-#: ../../bin/catalog_update.inc:218
+#: ../../bin/catalog_update.inc:234
 msgid ""
 "The switches [-m|-i|-o] can only be used, if one of the other switches [-c|-"
 "v|-a|-g] is used."
@@ -692,7 +715,7 @@ msgstr "오류: 이 기능이 정상 동작하려면 iconv가 필요합니다"
 
 #: ../../bin/fix_filenames.inc:51
 #, php-format
-msgid "%s For the Love of Music"
+msgid "%s"
 msgstr ""
 
 #: ../../bin/fix_filenames.inc:52
@@ -810,7 +833,7 @@ msgstr ""
 
 #: ../../bin/install/install_db.inc:89
 msgid "Database creation failed"
-msgstr ""
+msgstr "데이타베이스 생성 실패"
 
 #: ../../bin/install/install_db.inc:101
 msgid "Config file creation failed"
@@ -838,7 +861,7 @@ msgstr ""
 
 #: ../../bin/print_tags.inc:37
 msgid "File not found."
-msgstr ""
+msgstr "파일이 없습니다"
 
 #: ../../bin/print_tags.inc:43
 #, php-format
@@ -1110,13 +1133,13 @@ msgstr ""
 msgid "Stream Access"
 msgstr ""
 
-#: ../../lib/class/album.class.php:408 ../../lib/class/artist.class.php:681
+#: ../../lib/class/album.class.php:404 ../../lib/class/artist.class.php:681
 #: ../../templates/show_album_group_disks.inc.php:51
 #: ../../templates/show_lyrics.inc.php:32
 msgid "Unknown (Orphaned)"
 msgstr ""
 
-#: ../../lib/class/album.class.php:645
+#: ../../lib/class/album.class.php:641
 #: ../../lib/class/subsonic_xml_data.class.php:594
 #: ../../server/search.ajax.php:87
 #: ../../templates/show_album_group_disks.inc.php:109
@@ -1126,7 +1149,7 @@ msgstr ""
 msgid "Disk"
 msgstr ""
 
-#: ../../lib/class/album.class.php:657 ../../lib/class/browse.class.php:226
+#: ../../lib/class/album.class.php:653 ../../lib/class/browse.class.php:226
 #: ../../lib/class/upnp_api.class.php:331 ../../lib/ui.lib.php:180
 #: ../../server/search.ajax.php:57 ../../templates/header.inc.php:414
 #: ../../templates/show_label.inc.php:103
@@ -1143,23 +1166,23 @@ msgstr ""
 msgid "Artists"
 msgstr ""
 
-#: ../../lib/class/album.class.php:657 ../../lib/class/album.class.php:658
+#: ../../lib/class/album.class.php:653 ../../lib/class/album.class.php:654
 #: ../../templates/show_edit_album_row.inc.php:38
 #: ../../templates/show_install_config.inc.php:64
 msgid "Various"
 msgstr ""
 
-#: ../../lib/class/album.class.php:677
+#: ../../lib/class/album.class.php:673
 msgid "Album MusicBrainzID"
 msgstr ""
 
-#: ../../lib/class/album.class.php:680
+#: ../../lib/class/album.class.php:676
 msgid "Release Group MusicBrainzID"
 msgstr ""
 
-#: ../../lib/class/album.class.php:683 ../../lib/class/artist.class.php:501
+#: ../../lib/class/album.class.php:679 ../../lib/class/artist.class.php:501
 #: ../../lib/class/clip.class.php:121 ../../lib/class/search.class.php:239
-#: ../../lib/class/search.class.php:492 ../../lib/class/song.class.php:1489
+#: ../../lib/class/search.class.php:492 ../../lib/class/song.class.php:1490
 #: ../../templates/browse_filters.inc.php:79
 #: ../../templates/show_add_upload.inc.php:177
 #: ../../templates/show_albums.inc.php:40
@@ -1195,7 +1218,7 @@ msgstr ""
 msgid "Artist"
 msgstr ""
 
-#: ../../lib/class/album.class.php:686 ../../lib/class/search.class.php:232
+#: ../../lib/class/album.class.php:682 ../../lib/class/search.class.php:232
 #: ../../templates/show_add_upload.inc.php:188
 #: ../../templates/show_albums.inc.php:38
 #: ../../templates/show_albums.inc.php:112
@@ -1298,34 +1321,34 @@ msgid "Login Failed: timestamp out of range"
 msgstr ""
 
 #: ../../lib/class/api.class.php:182 ../../lib/class/api.class.php:195
-#: ../../lib/class/api.class.php:282
+#: ../../lib/class/api.class.php:290
 msgid "Error Invalid Handshake - "
 msgstr ""
 
 #: ../../lib/class/api.class.php:194 ../../lib/class/api.class.php:195
-#: ../../lib/class/api.class.php:282
+#: ../../lib/class/api.class.php:290
 msgid "Invalid Username/Password"
 msgstr ""
 
-#: ../../lib/class/api.class.php:661 ../../lib/class/api.class.php:679
-#: ../../lib/class/api.class.php:697
+#: ../../lib/class/api.class.php:669 ../../lib/class/api.class.php:687
+#: ../../lib/class/api.class.php:705
 msgid "Access denied to this playlist."
 msgstr ""
 
-#: ../../lib/class/api.class.php:815 ../../lib/class/api.class.php:876
+#: ../../lib/class/api.class.php:823 ../../lib/class/api.class.php:884
 #: ../../server/xml.server.php:109
 msgid "Invalid Request"
 msgstr ""
 
-#: ../../lib/class/api.class.php:836 ../../lib/class/api.class.php:854
+#: ../../lib/class/api.class.php:844 ../../lib/class/api.class.php:862
 msgid "Media Object Invalid or Not Specified"
 msgstr ""
 
-#: ../../lib/class/api.class.php:1069
+#: ../../lib/class/api.class.php:1077
 msgid "Wrong library item type."
 msgstr ""
 
-#: ../../lib/class/api.class.php:1073
+#: ../../lib/class/api.class.php:1081
 msgid "Library item not found."
 msgstr ""
 
@@ -1385,38 +1408,38 @@ msgstr ""
 msgid "Artist MusicBrainzID"
 msgstr ""
 
-#: ../../lib/class/autoupdate.class.php:233
+#: ../../lib/class/autoupdate.class.php:234
 msgid "Update available"
 msgstr ""
 
-#: ../../lib/class/autoupdate.class.php:236
+#: ../../lib/class/autoupdate.class.php:237
 msgid "See"
 msgstr ""
 
-#: ../../lib/class/autoupdate.class.php:236
+#: ../../lib/class/autoupdate.class.php:237
 msgid "changes"
-msgstr ""
-
-#: ../../lib/class/autoupdate.class.php:238
-#: ../../lib/class/autoupdate.class.php:241
-msgid "or"
 msgstr ""
 
 #: ../../lib/class/autoupdate.class.php:239
 #: ../../lib/class/autoupdate.class.php:242
+msgid "or"
+msgstr ""
+
+#: ../../lib/class/autoupdate.class.php:240
+#: ../../lib/class/autoupdate.class.php:243
 msgid "download"
 msgstr ""
 
-#: ../../lib/class/autoupdate.class.php:256
+#: ../../lib/class/autoupdate.class.php:257
 msgid "Updating Ampache sources with `"
 msgstr ""
 
-#: ../../lib/class/autoupdate.class.php:260
-#: ../../lib/class/autoupdate.class.php:275
+#: ../../lib/class/autoupdate.class.php:261
+#: ../../lib/class/autoupdate.class.php:276
 msgid "Done"
 msgstr ""
 
-#: ../../lib/class/autoupdate.class.php:271
+#: ../../lib/class/autoupdate.class.php:272
 msgid "Updating dependencies with `"
 msgstr ""
 
@@ -1870,7 +1893,7 @@ msgstr ""
 
 #: ../../lib/class/podcast_episode.class.php:157
 #: ../../lib/class/search.class.php:225 ../../lib/class/search.class.php:485
-#: ../../lib/class/song.class.php:1492 ../../lib/class/video.class.php:303
+#: ../../lib/class/song.class.php:1493 ../../lib/class/video.class.php:303
 #: ../../templates/show_democratic_playlist.inc.php:60
 #: ../../templates/show_democratic_playlist.inc.php:113
 #: ../../templates/show_disabled_songs.inc.php:29
@@ -2346,12 +2369,12 @@ msgstr ""
 msgid "by"
 msgstr ""
 
-#: ../../lib/class/song.class.php:1460
+#: ../../lib/class/song.class.php:1461
 #: ../../templates/show_html5_player.inc.php:154
 msgid "Show Lyrics"
 msgstr ""
 
-#: ../../lib/class/song.class.php:1486
+#: ../../lib/class/song.class.php:1487
 msgid "Track MusicBrainzID"
 msgstr ""
 
@@ -3225,7 +3248,7 @@ msgstr ""
 msgid "WARNING"
 msgstr ""
 
-#: ../../lib/general.lib.php:213
+#: ../../lib/general.lib.php:210
 #, php-format
 msgid "Unknown %s"
 msgstr ""
@@ -3566,33 +3589,25 @@ msgstr ""
 msgid "Off"
 msgstr ""
 
-#: ../../lostpassword.php:39
-msgid "Password has been sent"
-msgstr ""
-
-#: ../../lostpassword.php:41
-msgid "Password has not been sent"
-msgstr ""
-
-#: ../../lostpassword.php:60
+#: ../../lostpassword.php:71
 msgid "Lost Password"
 msgstr ""
 
-#: ../../lostpassword.php:64
+#: ../../lostpassword.php:75
 #, php-format
 msgid "A user from %s has requested a password reset for '%s'."
 msgstr ""
 
-#: ../../lostpassword.php:66
+#: ../../lostpassword.php:77
 #, php-format
 msgid "The password has been set to: %s"
 msgstr ""
 
-#: ../../modules/Beets/Catalog.php:125
+#: ../../modules/Beets/Catalog.php:126
 msgid "Running Beets Update"
 msgstr ""
 
-#: ../../modules/Beets/Catalog.php:200
+#: ../../modules/Beets/Catalog.php:205
 #: ../../modules/catalog/remote/remote.catalog.php:273
 #: ../../modules/catalog/soundcloud/soundcloud.catalog.php:300
 #: ../../modules/catalog/subsonic/subsonic.catalog.php:254
@@ -3725,7 +3740,7 @@ msgstr ""
 msgid "Removing song \"%s\""
 msgstr ""
 
-#: ../../modules/catalog/dropbox/dropbox.catalog.php:529
+#: ../../modules/catalog/dropbox/dropbox.catalog.php:521
 msgid "API Error: cannot connect to Dropbox."
 msgstr ""
 
@@ -5314,7 +5329,7 @@ msgstr ""
 
 #: ../../templates/show_add_upload.inc.php:224
 msgid "Browse"
-msgstr ""
+msgstr "탐색하기"
 
 #: ../../templates/show_add_user.inc.php:23
 msgid "Adding a New User"
@@ -5323,7 +5338,7 @@ msgstr ""
 #: ../../templates/show_add_user.inc.php:80
 #: ../../templates/show_edit_user.inc.php:104
 msgid "User Access Level"
-msgstr ""
+msgstr "사용자 접근 수준"
 
 #: ../../templates/show_add_user.inc.php:105
 #: ../../templates/sidebar_admin.inc.php:33
@@ -5334,25 +5349,25 @@ msgstr ""
 #: ../../templates/show_album.inc.php:50 ../../templates/show_artist.inc.php:43
 #: ../../templates/show_label.inc.php:35 ../../templates/show_song.inc.php:153
 msgid "Search on Google ..."
-msgstr ""
+msgstr "구글에서 찾기 ..."
 
 #: ../../templates/show_album_group_disks.inc.php:46
 #: ../../templates/show_album.inc.php:51 ../../templates/show_artist.inc.php:44
 #: ../../templates/show_label.inc.php:36 ../../templates/show_song.inc.php:154
 msgid "Search on DuckDuckGo ..."
-msgstr ""
+msgstr "덕덕고에서 찾기 ..."
 
 #: ../../templates/show_album_group_disks.inc.php:47
 #: ../../templates/show_album.inc.php:52 ../../templates/show_artist.inc.php:45
 #: ../../templates/show_label.inc.php:37
 msgid "Search on Wikipedia ..."
-msgstr ""
+msgstr "위키피디아에서 찾기 ..."
 
 #: ../../templates/show_album_group_disks.inc.php:48
 #: ../../templates/show_album.inc.php:53 ../../templates/show_artist.inc.php:46
 #: ../../templates/show_label.inc.php:38 ../../templates/show_song.inc.php:155
 msgid "Search on Last.fm ..."
-msgstr ""
+msgstr "라스트에프엠에서 찾기 ..."
 
 #: ../../templates/show_album_group_disks.inc.php:59
 #: ../../templates/show_album.inc.php:100
@@ -5466,7 +5481,7 @@ msgstr ""
 
 #: ../../templates/show_album.inc.php:207
 msgid "Edit Album"
-msgstr ""
+msgstr "앨범 편집하기"
 
 #: ../../templates/show_albums.inc.php:35
 #: ../../templates/show_albums.inc.php:109
@@ -5585,7 +5600,7 @@ msgstr ""
 #: ../../templates/show_now_playing_row.inc.php:83
 #: ../../templates/show_now_playing_row.inc.php:89
 msgid "Loading..."
-msgstr ""
+msgstr "불러 오는 중 ..."
 
 #: ../../templates/show_artist.inc.php:101
 #: ../../templates/show_artist.inc.php:103
@@ -5608,7 +5623,7 @@ msgstr ""
 #: ../../templates/show_tvshow_season.inc.php:61
 #: ../../templates/show_tvshow_season.inc.php:62
 msgid "Play all"
-msgstr ""
+msgstr "전부 듣기"
 
 #: ../../templates/show_artist.inc.php:124
 #: ../../templates/show_artist.inc.php:125
@@ -5716,14 +5731,14 @@ msgstr ""
 #: ../../templates/show_channel_row.inc.php:37
 #: ../../templates/show_search_row.inc.php:46
 msgid "Yes"
-msgstr ""
+msgstr "예"
 
 #: ../../templates/show_broadcast_row.inc.php:33
 #: ../../templates/show_channel_row.inc.php:36
 #: ../../templates/show_channel_row.inc.php:37
 #: ../../templates/show_search_row.inc.php:46
 msgid "No"
-msgstr ""
+msgstr "아니오"
 
 #: ../../templates/show_broadcasts_dialog.inc.php:39
 msgid "New broadcast"
@@ -5734,7 +5749,7 @@ msgstr ""
 #: ../../templates/show_edit_channel_row.inc.php:88
 #: ../../templates/show_song.inc.php:151
 msgid "Genre"
-msgstr ""
+msgstr "장르"
 
 #: ../../templates/show_broadcasts.inc.php:33
 msgid "Started"
@@ -6388,7 +6403,7 @@ msgstr ""
 
 #: ../../templates/show_export.inc.php:59
 msgid "Export"
-msgstr ""
+msgstr "내보내기"
 
 #: ../../templates/show_gather_art.inc.php:23
 msgid "Art Search"
@@ -6432,19 +6447,19 @@ msgstr ""
 
 #: ../../templates/show_graphs.inc.php:60
 msgid "Zoom"
-msgstr ""
+msgstr "확대"
 
 #: ../../templates/show_graphs.inc.php:66
 msgid "Month"
-msgstr ""
+msgstr "월"
 
 #: ../../templates/show_graphs.inc.php:67
 msgid "Day"
-msgstr ""
+msgstr "일"
 
 #: ../../templates/show_graphs.inc.php:68
 msgid "Hour"
-msgstr ""
+msgstr "시"
 
 #: ../../templates/show_highest.inc.php:23
 #: ../../templates/show_newest.inc.php:23
@@ -6452,7 +6467,7 @@ msgstr ""
 #: ../../templates/show_recent.inc.php:23
 #: ../../templates/sidebar_home.inc.php:128
 msgid "Information"
-msgstr ""
+msgstr "정보"
 
 #: ../../templates/show_html5_player_headers.inc.php:222
 msgid "Your browser doesn't support this feature."
@@ -6609,7 +6624,7 @@ msgstr ""
 
 #: ../../templates/show_install_check.inc.php:60
 msgid "ampache.cfg.php is writable"
-msgstr ""
+msgstr "ampache.cfg.php 는 쓰기 가능하다"
 
 #: ../../templates/show_install_check.inc.php:62
 msgid ""
@@ -6647,19 +6662,19 @@ msgstr ""
 #: ../../templates/show_install_config.inc.php:80
 #: ../../templates/show_install.inc.php:56
 msgid "MySQL Hostname"
-msgstr ""
+msgstr "MySQL 호스트명"
 
 #: ../../templates/show_install_config.inc.php:86
 msgid "MySQL Port (optional)"
-msgstr ""
+msgstr "MySQL 포트(선택사항)"
 
 #: ../../templates/show_install_config.inc.php:92
 msgid "MySQL Username"
-msgstr ""
+msgstr "MySQL 사용자명"
 
 #: ../../templates/show_install_config.inc.php:98
 msgid "MySQL Password"
-msgstr ""
+msgstr "MySQL 암호"
 
 #: ../../templates/show_install_config.inc.php:108
 msgid "Installation type"
@@ -6723,7 +6738,7 @@ msgstr ""
 
 #: ../../templates/show_install_config.inc.php:138
 msgid "Template Configuration"
-msgstr ""
+msgstr "템플릿 설정"
 
 #: ../../templates/show_install_config.inc.php:155
 msgid ""
@@ -7602,7 +7617,7 @@ msgstr ""
 
 #: ../../templates/show_shared_objects.inc.php:30
 msgid "Last Visit"
-msgstr ""
+msgstr "마지막 방문"
 
 #: ../../templates/show_shared_objects.inc.php:31
 msgid "Counter"
@@ -7659,7 +7674,7 @@ msgstr ""
 
 #: ../../templates/show_song_row.inc.php:95
 msgid "Song Information"
-msgstr ""
+msgstr "곡 정보"
 
 #: ../../templates/show_song_row.inc.php:115
 msgid "Song edit"
@@ -7675,7 +7690,7 @@ msgstr ""
 
 #: ../../templates/show_stats.inc.php:31
 msgid "Connected Users"
-msgstr ""
+msgstr "연결된 사용자들"
 
 #: ../../templates/show_stats.inc.php:32
 msgid "Total Users"
@@ -7711,11 +7726,11 @@ msgstr ""
 
 #: ../../templates/show_test.inc.php:51
 msgid "Web Installation"
-msgstr ""
+msgstr "웹 설치"
 
 #: ../../templates/show_test_table.inc.php:24
 msgid "PHP version"
-msgstr ""
+msgstr "PHP 버전"
 
 #: ../../templates/show_test_table.inc.php:29
 msgid ""
@@ -7725,7 +7740,7 @@ msgstr ""
 
 #: ../../templates/show_test_table.inc.php:33
 msgid "Dependencies"
-msgstr ""
+msgstr "의존성"
 
 #: ../../templates/show_test_table.inc.php:38
 msgid "This tests whether Ampache dependencies are installed."
@@ -7760,7 +7775,7 @@ msgstr ""
 
 #: ../../templates/show_test_table.inc.php:66
 msgid "PHP PDO extension"
-msgstr ""
+msgstr "PHP PDO 확장"
 
 #: ../../templates/show_test_table.inc.php:71
 msgid ""
@@ -8315,7 +8330,7 @@ msgstr ""
 
 #: ../../templates/sidebar_preferences.inc.php:41
 msgid "Account"
-msgstr ""
+msgstr "계정"
 
 #: ../../tvshow_seasons.php:38 ../../tvshow_seasons.php:58
 #: ../../tvshow_seasons.php:60
@@ -8391,7 +8406,7 @@ msgstr ""
 # Please do not delete or modify the content by yourself. It will be
 # automatically (re)generated
 # if you run './gather-messages.sh [-gu|--getutds].
-# Last Update: 04.06.2018 15:57:55 CEST
+# Last Update: 26.05.2019 15:10:29 CEST
 #
 #: Database preference table id 1
 msgid "Allow Downloads"
@@ -8421,11 +8436,7 @@ msgstr ""
 msgid "Type of Playback"
 msgstr ""
 
-# is already in the source code
-# but to avoid confusion, it's added and commented
-# msgid "Language"
-# msgstr ""
-#: Database preference table id 31 32
+#: Database preference table id 32
 msgid "Playlist Type"
 msgstr ""
 
@@ -8469,15 +8480,7 @@ msgstr ""
 msgid "Playlist Method"
 msgstr ""
 
-# is already in the source code
-# but to avoid confusion, it's added and commented
-# msgid "Transcoding"
-# msgstr ""
-# is already in the source code
-# but to avoid confusion, it's added and commented
-# msgid "Show Lyrics"
-# msgstr ""
-#: Database preference table id 55 69 72
+#: Database preference table id 72
 msgid "Shoutcast Active Instance"
 msgstr ""
 
@@ -8619,7 +8622,7 @@ msgstr ""
 
 #: Database preference table id 109
 msgid "Top menu"
-msgstr ""
+msgstr "탑 메뉴"
 
 #: Database preference table id 110
 msgid "Clear democratic votes of expired user sessions"
@@ -8804,7 +8807,7 @@ msgstr ""
 
 #: Database preference table id 164
 msgid "Amazon base url"
-msgstr ""
+msgstr "아마존 기본 url"
 
 #: Database preference table id 165
 msgid "Amazon max results pages"
@@ -8812,12 +8815,36 @@ msgstr ""
 
 #: Database preference table id 166
 msgid "Amazon Access Key ID"
-msgstr ""
+msgstr "아마존 접근 키 ID"
 
 #: Database preference table id 167
 msgid "Amazon Secret Access Key"
-msgstr ""
+msgstr "아마존 비밀 접근 키"
 
 #: Database preference table id 168
 msgid "Amazon associate tag"
 msgstr ""
+
+#: Database preference subcategory table id 150
+msgid "library"
+msgstr ""
+
+#: Database preference subcategory table id 151
+msgid "upload"
+msgstr ""
+
+#: Database preference subcategory table id 152
+msgid "catalog"
+msgstr ""
+
+#: Database preference subcategory table id 154
+msgid "theme"
+msgstr "주제"
+
+#: Database preference subcategory table id 155
+msgid "custom"
+msgstr ""
+
+#: Database preference subcategory table id 164
+msgid "amazon"
+msgstr "아마존"
